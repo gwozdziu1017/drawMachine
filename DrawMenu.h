@@ -19,9 +19,17 @@ enum MenuType
 	EndMenu
 };
 
-class DrawMenu
+static class DrawMenu
 {
 public:
-	void GetMenu(MenuType);
-	void CleanScreen();
+	DrawMenu();
+
+	static void GetMenu(MenuType);
+	static void DrawMenuInitial();
+	static void DrawMenuAddItem();
+	static void DrawMenuDrawingMenu();
+	static void DrawMenuEndMenu();
+	static void CleanScreen();
+	static MenuType ConvertIntToDrawingMenu(const int intToConvert);
+
 };

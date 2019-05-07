@@ -4,7 +4,6 @@ DrawObjects::DrawObjects()
 {
 	this->itemVec = {};
 	this->item = nullptr;
-	this->InsertIntoContainer();
 }
 
 // Funkcja ktora zapisuje do vectora itemow wpisane pzrez uzytkownika wartosci
@@ -21,13 +20,13 @@ void DrawObjects::InsertIntoContainer()
 // Wpisuje do vectora pojedynczy element
 void DrawObjects::InsertItem(const char*)
 {
-	itemVec.push_back(item);
+	this->itemVec.push_back(item);
 }
 
 // Sprawdzanie czy podany char to znak ESC
 bool DrawObjects::IsEscKey(const char* input)
 {
-	atoi(input) == 27 ? true: false;
+	return atoi(input) == 27;
 }
 
 

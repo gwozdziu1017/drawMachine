@@ -142,6 +142,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="DrawCore.h" />
+    <ClInclude Include="DrawMenu.h" />
+    <ClInclude Include="DrawObjects.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="DrawCore.cpp" />
+    <ClCompile Include="DrawMenu.cpp" />
+    <ClCompile Include="DrawObjects.cpp" />
+    <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
